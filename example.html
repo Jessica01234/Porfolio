@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Dropdown Example</title>
+    <style>
+        /* CSS for the dropdown */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dropdown">
+    <button id="message-Button">Hover Here</button>
+    <button id="message-Button">Hover Here</button>
+    <button id="message-Button">Hover Here</button>
+    <button id="message-Button">Hover Here</button>
+
+    <div class="dropdown-content">
+        These tags tell you what technologies I use.
+    </div>
+</div>
+
+<script>
+    // JavaScript to handle functionality (optional)
+    const messageButton = document.getElementById("message-Button");
+
+    // Event listener to handle hover
+    messageButton.addEventListener("mouseover", function() {
+        // You can add more functionality here if needed
+    });
+</script>
+
+</body>
+</html>

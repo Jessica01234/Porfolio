@@ -1,0 +1,245 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #c95, #f7ead3, #c95);;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.portrait{
+    padding-top: 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+img{
+    width: 100%; 
+    object-fit: cover;
+}
+
+.Bio{
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.page-title{
+    font-size: 3.55em;
+    color: #02027b;
+    padding-bottom: 2rem;
+}
+
+.page-subtitle{
+    font-size: 1.8rem;
+    padding-bottom: 2em;
+}
+
+.bio-info{
+    color: #494949;
+    font-size: 1.2rem;
+}
+
+hr{
+    width: 7%;
+    margin: 2rem auto;
+    border-image: none;
+    border-top-color: #bababa;
+    border-top-style: dotted;
+    border-top-width: .5rem; 
+}
+.semi-title{
+    margin-bottom: 2rem;
+    margin-top: 1.3rem;
+    font-weight: 600;
+    font-size: 2em;
+    color: #02027b;
+    text-align: center;
+}
+
+[class~=bm-2] {
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-image: none;
+    border-top-color: currentColor;
+    border-right-color: currentColor;
+    border-bottom-color: currentColor;
+    border-left-color: currentColor;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+}
+
+.card-body{
+    text-align: center;
+    background-color: #f5bd8c;
+}
+
+[class~=card-title] {
+    font-weight: bold;
+}
+
+[class~=card-text] {
+    min-height: 5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.tag-container{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #000;
+}
+
+.tag{
+    white-space: pre;
+    text-shadow: none;
+    text-align: center;
+    padding-top: .10em;
+    padding-right: .5em;
+    padding-bottom: .10em;
+    padding-left: .5em;
+    margin: .1em;
+    line-height: 2.2em;
+    font-size: .85em;
+    color: #2c2c2c;border-radius: .375pc;
+    border-image: none;
+    border-color: #2c2c2c;
+    border-style: solid;
+    border-right-width: 1.275pt;
+    border-top-width: 1.275pt;
+    border-left-width: 1.275pt;
+    border-bottom-width: .10625pc;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #0d0dea;
+    border-radius: 6px;
+    font-size: 10px;
+    padding: 5px 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid#fff;
+    color: #fff;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul{
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0in;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: .8rem;
+    display: table;
+}
+
+li::before{
+    content: '\2605';
+    margin: 0 1em;
+}
+
+[class~=subheading] {
+    margin-bottom: 0;
+    margin-top: 0.2rem;
+    font-size: 1.2em;
+    color: #010101;
+    text-align: center;
+    font-weight: 600;
+}
+
+[class~=mini-subheading]{
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.1em;
+    color: #595959;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+a {
+    color: #d26600;
+}
+
+a:hover{
+    color: #f00;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+}
+
+.link-dropdown{
+    display: none;
+    position: absolute;
+    top: 90%;
+    background-color: #0d0dea;
+    border-radius: 6px;
+    font-size: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border: 1px solid#fff;
+    color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+.link:hover .link-dropdown {
+    display: block;
+}
+
+.footer-img{
+    height: 30vh;
+}
+
+.Copyright-text{
+    color: #494949;
+    font-size: 1rem;
+    margin-top: 1pc;
+    margin-bottom: 8pc;
+}
